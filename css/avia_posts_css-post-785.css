@@ -1,0 +1,90 @@
+.avia-section.av-3mg5k9-135a9fbd56c06523733aa105879e4518{
+background-color:#fcf5f8;
+background-image:unset;
+}
+
+#top .hr.hr-invisible.av-3fx4wx-af0f9f2cfcdcf9388d939b57c5482e76{
+height:70px;
+}
+
+#top .hr.hr-invisible.av-36qob5-7f433a65155057558c272063cff5da13{
+height:10px;
+}
+
+#top .av-special-heading.av-31aht5-f2895f51ab063c5056918672061b3f03{
+padding-bottom:10px;
+font-size:28px;
+}
+body .av-special-heading.av-31aht5-f2895f51ab063c5056918672061b3f03 .av-special-heading-tag .heading-char{
+font-size:25px;
+}
+#top #wrap_all .av-special-heading.av-31aht5-f2895f51ab063c5056918672061b3f03 .av-special-heading-tag{
+font-size:28px;
+}
+.av-special-heading.av-31aht5-f2895f51ab063c5056918672061b3f03 .av-subheading{
+font-size:18px;
+}
+
+#top .hr.hr-invisible.av-2xet9d-ee278b29b612bccf240504613f1d6be4{
+margin-top:-50px;
+height:1px;
+}
+
+#top .hr.hr-invisible.av-2ohftd-dc79273878b3ea6b50b4553ef676bcb1{
+margin-top:-30px;
+height:1px;
+}
+
+.flex_column.av-2lxtz5-9a9ff9d76a6a27dc4bfed9f9902be4d4{
+border-radius:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+
+#top #wrap_all .avia-button.av-nr4k1-4fdba9d6a7694cebb28b2d18840fcbfd{
+background-color:#f4b400;
+border-color:#f4b400;
+color:#ffffff;
+transition:all 0.4s ease-in-out;
+margin-bottom:5px;
+margin-right:3px;
+margin-left:3px;
+}
+
+#top #wrap_all .avia-button.av-1bnvt-c3f9c48ed812d107858eee34cd81d69c{
+background-color:#3b5998;
+border-color:#3b5998;
+color:#ffffff;
+transition:all 0.4s ease-in-out;
+margin-bottom:5px;
+margin-right:3px;
+margin-left:3px;
+}
+
+#top .hr.hr-invisible.av-au7o9-3f89ce01068d433fb18b809eaa44de06{
+height:75px;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 989px){ 
+#top #wrap_all .av-special-heading.av-31aht5-f2895f51ab063c5056918672061b3f03 .av-special-heading-tag{
+font-size:30px;
+}
+.av-special-heading.av-31aht5-f2895f51ab063c5056918672061b3f03 .av-subheading{
+font-size:16px;
+}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){ 
+#top #wrap_all .av-special-heading.av-31aht5-f2895f51ab063c5056918672061b3f03 .av-special-heading-tag{
+font-size:30px;
+}
+}
+
+@media only screen and (max-width: 479px){ 
+#top #wrap_all .av-special-heading.av-31aht5-f2895f51ab063c5056918672061b3f03 .av-special-heading-tag{
+font-size:23px;
+}
+.av-special-heading.av-31aht5-f2895f51ab063c5056918672061b3f03 .av-subheading{
+font-size:14px;
+}
+}

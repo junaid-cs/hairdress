@@ -1,0 +1,78 @@
+.avia-section.av-1lq20m-cb3a93c5e9e24bf762e2f170dbe357f6{
+background-repeat:no-repeat;
+background-image:url(../images/frisoerkvindemedbrunthaar.jpg);
+background-position:50% 50%;
+background-attachment:fixed;
+}
+.avia-section.av-1lq20m-cb3a93c5e9e24bf762e2f170dbe357f6 .av-section-color-overlay{
+opacity:0.7;
+background-color:#5e5e5e;
+}
+
+#top .hr.hr-invisible.av-1f99m6-7d870e0bb47531604d69d45dce9c2b0e{
+height:50px;
+}
+
+#top .av-special-heading.av-1a42y6-49d032a61edd8cf76597a5ca398f8d4f{
+padding-bottom:10px;
+color:#ffffff;
+font-size:35px;
+}
+body .av-special-heading.av-1a42y6-49d032a61edd8cf76597a5ca398f8d4f .av-special-heading-tag .heading-char{
+font-size:25px;
+}
+#top #wrap_all .av-special-heading.av-1a42y6-49d032a61edd8cf76597a5ca398f8d4f .av-special-heading-tag{
+font-size:35px;
+}
+.av-special-heading.av-1a42y6-49d032a61edd8cf76597a5ca398f8d4f .special-heading-inner-border{
+border-color:#ffffff;
+}
+.av-special-heading.av-1a42y6-49d032a61edd8cf76597a5ca398f8d4f .av-subheading{
+font-size:20px;
+}
+
+#top .hr.hr-invisible.av-11jafq-1de7052fa25ca1adb69a8c08f1d608a0{
+margin-top:-10px;
+height:1px;
+}
+
+#top .av_textblock_section.av-yrawe-2107003bf7e9e1d03afb1cc47f6115ac .avia_textblock{
+color:#ffffff;
+text-align:center;
+}
+
+#top .hr.hr-invisible.av-owd4e-eda265f00c59840b0e9034fa6a3de423{
+height:15px;
+}
+
+#top #wrap_all .avia-button.av-hn4su-66c6f5be5e5b23a594ba3b2ddcd666ae{
+margin-bottom:5px;
+margin-right:3px;
+margin-left:3px;
+}
+
+#top .hr.hr-invisible.av-9s7m6-705ef70e6461b1395a619b9072062235{
+height:50px;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 989px){ 
+#top #wrap_all .av-special-heading.av-1a42y6-49d032a61edd8cf76597a5ca398f8d4f .av-special-heading-tag{
+font-size:30px;
+}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){ 
+#top #wrap_all .av-special-heading.av-1a42y6-49d032a61edd8cf76597a5ca398f8d4f .av-special-heading-tag{
+font-size:30px;
+}
+}
+
+@media only screen and (max-width: 479px){ 
+#top #wrap_all .av-special-heading.av-1a42y6-49d032a61edd8cf76597a5ca398f8d4f .av-special-heading-tag{
+font-size:25px;
+}
+.av-special-heading.av-1a42y6-49d032a61edd8cf76597a5ca398f8d4f .av-subheading{
+font-size:16px;
+}
+}

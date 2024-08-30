@@ -1,0 +1,867 @@
+/*
+Theme Name: Theme
+Version: 1.0
+Author: Author
+Author URI: http://www.wordpress.com
+Template: enfold
+*/
+
+/*******************************************************************************
+ * GENERAL STYLES
+ * Styles som rette op på små "fejl" i enfold.
+ ******************************************************************************/
+
+/*------------------------------------*\
+  #Logo
+\*------------------------------------*/
+span.logo a img {padding:5px;}
+
+/*------------------------------------*\
+  #Navigation
+\*------------------------------------*/
+
+/* Større menu knap */
+ #top .main_menu .av-menu-button-colored .avia-menu-text { padding: 10px 20px; }
+
+/* Navigations ikoner spacing */
+.main_menu .av-icon-char, .sub_menu .av-icon-char, .phone-info .av-icon-char { padding-right: 5px; }
+
+/*------------------------------------*\
+  #Fixer hoppende tal
+\*------------------------------------*/
+
+p, a {-webkit-font-feature-settings: "lnum";}
+
+.avia-menu-text, .avia_iconbox_title {
+	-webkit-font-feature-settings: "lnum";
+}
+
+/*------------------------------------*\
+  #Buttons
+\*------------------------------------*/
+
+/* Ens størrelse på bordered/colored */
+.avia-color-dark.avia-size-small, 
+.avia-color-light.avia-size-small   { padding:  6px 10px  5px !important; }
+.avia-color-dark.avia-size-medium, 
+.avia-color-light.avia-size-medium  { padding:  9px 16px  8px !important; }
+.avia-color-dark.avia-size-large, 
+.avia-color-light.avia-size-large   { padding: 12px 30px 11px !important; }
+.avia-color-dark.avia-size-x-large, 
+.avia-color-light.avia-size-x-large { padding: 22px 50px 21px !important; }
+
+/*------------------------------------*\
+  #Headings & text
+\*------------------------------------*/
+
+/* Fjerner mærklig style fra &-tegnet */
+.special_amp {
+    font-family: inherit !important;
+    font-style: inherit !important;
+    font-size: inherit !important;
+	color: inherit !important;
+    line-height: inherit !important;
+    font-weight: inherit !important;
+}
+
+
+/*------------------------------------*\
+  # Testimonial slider
+\*------------------------------------*/
+.av-large-testimonial-slider .avia-slideshow-arrows a {
+	top: calc(50% - 55px) !important;
+}
+#top .av-large-testimonial-slider.avia-testimonial-wrapper .avia-testimonial {
+    padding: 0px 60px;
+}
+
+/*------------------------------------*\
+  #Footer
+\*------------------------------------*/
+
+#footer-desktop {margin-top:0px !important;}
+
+/* Transparrent header fix af padding på footer */
+.html_header_transparency #top .avia-builder-el-0 .container, 
+.html_header_transparency #top .avia-builder-el-0 .slideshow_caption { padding-top: 0px; }
+
+/*------------------------------------*\
+  #Socket
+\*------------------------------------*/
+
+#socket .container { text-align:center; }
+#socket .copyright { float:none; }
+
+/*------------------------------------*\
+  #Cookie
+\*------------------------------------*/
+
+.avia_cookie_text a {
+	color: inherit !important;
+	text-decoration: underline;
+}
+
+/* diagonal border */
+.avia_transform .av-extra-border-element.border-extra-diagonal .av-extra-border-inner {transform:rotate(3deg);}
+
+/*******************************************************************************
+ * HELPER CLASESS
+ * Classes som tilføjer effekter eller specielle styles
+ ******************************************************************************/
+
+/*******************************************************************************
+ * HELPER CLASESS
+ * Classes som tilføjer effekter eller specielle styles
+ ******************************************************************************/
+
+/*------------------------------------*\
+  #Headings & content text
+\*------------------------------------*/
+/** 
+ * Bold font-weight til Special Headings eller Text Blocks
+ * .bold, .bold-h, bold-p
+ */
+.bold-h h1, .bold-h h2, .bold-h h3, .bold-h h4, 
+.bold h1, .bold h2, .bold h3, .bold p,
+.bold-p p { font-weight: bold !important; }
+
+/** 
+ * Uppercase text-transform til Special Headings eller Text Blocks
+ * .uppercase-h, .uppercase, uppercase-p
+ */
+.uppercase-h h1, .uppercase-h h2, .uppercase-h h3, 
+.uppercase h1, .uppercase h2, .uppercase h3, .uppercase p, 
+.uppercase-p p,
+.uppercase .avia-button{
+	text-transform: uppercase !important;
+}
+
+/**
+ * Giver heading style til Text Blocks - Font-family sættes i Quick CSS 
+ * .fake-heading-1, fake-heading-2
+ */
+.fake-heading-1 p, 
+.fake-heading-2 p {
+	line-height: 1.1em !important;
+	margin: 0 !important;
+	font-family:'Montserrat';
+}
+.fake-heading p {font-size:1.7em; font-family:'Montserrat'; line-height: 140%;}
+
+/**
+ * Text alignment - Mobil ting
+ */
+.ta-left {text-align: left;}
+.ta-center {text-align: center;}
+.ta-right {text-align: right;}
+.ta-justify {text-align: justify;}
+
+/**
+ * Text padding
+ */
+.text-padding-10 p {padding:0px 10px;}
+.text-padding-20 p {padding:0px 20px;}
+.text-padding-30 p {padding:0px 30px;}
+.text-padding-40 p {padding:0px 40px;}
+.text-padding-50 p {padding:0px 50px;}
+
+/**
+ * Fjern top og bottom margin fra p
+ */
+.no-text-margin p {margin-top: 0; margin-bottom: 0;}
+
+/**
+ * Tilføjer "-tegn til text-box
+ * .quote-style
+ */
+.avia_textblock.quote-style:before,
+.avia_textblock.quote-style:after{
+	font-family: Georgia;
+	position: absolute;
+	color: #E8E8E8;
+    font-size: 80px;
+}
+.avia_textblock.quote-style:before {
+	content: "“";
+	left: 20px;
+}
+.avia_textblock.quote-style:after {
+	content: "”";
+	right: 20px;
+}
+
+/*------------------------------------*\
+  #Buttons
+\*------------------------------------*/
+
+/**
+ * Gennemsigtig baggrund til bordered buttons 
+ * .transparrent-button
+ */
+#top .transparrent-button .avia-color-light { background:#0006; }
+#top .transparrent-button .avia-color-dark  { background:#fff6; }
+
+/**
+ * Override button radius 
+ */
+#top .round-button .avia-button {border-radius: 100px !important;}
+#top .square-button .avia-button {border-radius: 0px !important;}
+
+/*------------------------------------*\
+  #Effects
+\*------------------------------------*/
+
+/**
+ * Forstørre elementer ved hover 
+ * .grow 
+ */
+.grow {transition: all .3s ease-in-out;}
+.grow:hover {
+	transform: scale(1.05); 
+	z-index:3 !important; 
+}
+
+/**
+ * Tilføj skygge til element eller hele sektioner 
+ * .shadow, .shadow-sektion 
+ */
+.shadow, 
+.shadow-sektion .entry-content-wrapper {
+	-webkit-box-shadow: 0px 13px 50px -6px rgba(0,0,0,0.4);
+	   -moz-box-shadow: 0px 13px 50px -6px rgba(0,0,0,0.4);
+	        box-shadow: 0px 13px 50px -6px rgba(0,0,0,0.4);
+}
+
+/* Skygge på tekst */
+.text-shadow {text-shadow:5px 5px 30px black;}
+
+
+/*------------------------------------*\
+  #Images
+\*------------------------------------*//*
+/* Overlays */
+.overlay-light {background-blend-mode:exclusion;}
+.overlay-medium {background-blend-mode:soft-light;}
+.overlay-dark {background-blend-mode:overlay;}
+.overlay-black-white {background-blend-mode:luminosity;}
+
+
+/*------------------------------------*\
+  #White spaces & sections
+\*------------------------------------*/
+/**
+ * Tilføj eller overskriv top margin
+ */
+.margin-top-0  { margin-top: 0    !important; }
+.margin-top-10 { margin-top: 10px !important; }
+.margin-top-20 { margin-top: 20px !important; }
+.margin-top-30 { margin-top: 30px !important; }
+.margin-top-40 { margin-top: 40px !important; }
+.margin-top-50 { margin-top: 50px !important; }
+
+.margin-top--10 {margin-top: -10px !important; }
+.margin-top--20 {margin-top: -20px !important; }
+.margin-top--30 {margin-top: -30px !important; }
+.margin-top--40 {margin-top: -40px !important; }
+.margin-top--50 {margin-top: -50px !important; }
+.margin-top--60 {margin-top: -60px !important; }
+
+
+/**
+ * Tilføj eller overskriv bottom margin
+ */
+.margin-bottom-0  { margin-bottom: 0    !important; }
+.margin-bottom-10 { margin-bottom: 10px !important; }
+.margin-bottom-20 { margin-bottom: 20px !important; }
+.margin-bottom-30 { margin-bottom: 30px !important; }
+.margin-bottom-40 { margin-bottom: 40px !important; }
+.margin-bottom-50 { margin-bottom: 50px !important; }
+
+/**
+ * Tilføj eller overskriv både top & bottom margin
+ */
+/*.margin-p  { margin-top: 0.85em;  margin-bottom: 0.85em;} */
+.margin-0  { margin-top: 0    !important; margin-bottom: 0    !important; }
+.margin-10 { margin-top: 10px !important; margin-bottom: 10px !important; }
+.margin-20 { margin-top: 20px !important; margin-bottom: 20px !important; }
+.margin-30 { margin-top: 30px !important; margin-bottom: 30px !important; }
+.margin-40 { margin-top: 40px !important; margin-bottom: 40px !important; }
+.margin-50 { margin-top: 50px !important; margin-bottom: 50px !important; }
+
+/**
+ * Color sections 
+ * Justerer width på 'container' på Color sections
+ */
+
+.width-40 .container { max-width:100% !important; width:40% !important; padding-left:0; padding-right:0;}
+.width-50 .container {	max-width:100% !important; width:50% !important; padding-left:0; padding-right:0;}
+.width-60 .container {	max-width:100% !important; width:60% !important; padding-left:0; padding-right:0;}
+.width-70 .container {	max-width:100% !important; width:70% !important; padding-left:0; padding-right:0;}
+.width-75 .container {	max-width:100% !important; width:75% !important; padding-left:0; padding-right:0;}
+.width-80 .container {	max-width:100% !important; width:80% !important; padding-left:0; padding-right:0;}
+.width-85 .container {	max-width:100% !important; width:85% !important; padding-left:0; padding-right:0;}
+.width-90 .container {	max-width:100% !important; width:90% !important; padding-left:0; padding-right:0;}
+.width-95 .container {	max-width:100% !important; width:95% !important; padding-left:0; padding-right:0;}
+.width-100 .container {	max-width:100% !important; width:100% !important; padding:0;}
+
+
+/*------------------------------------*\
+  #Footer elements
+\*------------------------------------*/
+
+/* Footer icon box */
+.footer-icon-box p{
+	margin: 0;
+    line-height: 1.1;
+}
+
+
+/* Footer Table til Åbningstider/Telefontider */
+.footer-table td {
+	padding: 5px 8px !important;
+	font-size: 12px;
+}
+.footer-table td:last-child  { text-align: right; }
+.footer-table td:first-child { text-align: left; }
+
+
+/* Footer Catalogue til Åbningstider/Telefontider */
+.footer-catalogue .av-catalogue-title-container { font-size: 13px; }
+.footer-catalogue .av-catalogue-item { text-transform: initial; }
+#top .footer-catalogue .av-catalogue-item { padding: 7px 3px; }
+
+
+/* Footer Maps + Åbningstider/Telefontider - catalogue */
+.footer-maps-catalogue .av-catalogue-title { text-transform: initial; }
+
+
+/* Menu liste til footer */ 
+.menu-footer-menu-container li { border: none !important; }
+#top .widget_nav_menu .menu-footer-menu-container li a{ padding: 5px 3px !important; }
+
+
+/* Footer logo */
+.footer-logo img { max-width:210px; }
+
+
+/* CTA farve på links */
+.cta-color a, .av_iconlist_title.cta-color a {color:#00A896 !important;}
+
+
+/*------------------------------------*\
+  #Mobil styles
+\*------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 989px) {
+	/* Skjul element på tablet */
+	.hide-tablet {display:none !important;}
+}
+
+@media only screen and (min-width: 989px) and (max-width: 1024px) {
+	/* Skjul element på ipad pro */
+	.hide-tablet-pro {display:none !important;}
+}
+
+@media only screen and (max-width: 479px) {
+	/* Minimer padding på mobil/very small screen */
+	.small-padding-mobil {padding:30px !important;}
+}
+
+/**
+ * NINJA FORMS
+ * Dette styles sheet indeholde styles som normalisere ninja forms og
+ * giver en række standard styles. Ninja forms kan enten redigeres her
+ */
+
+
+/*******************************************************************************
+ * NINJA FORMS
+ * Classes som tilføjer effekter eller specielle styles
+ ******************************************************************************/
+
+/* Ninja forms error */
+.nf-field .nf-fail .ninja-forms-field{ border-color: red !important;}
+.nf-after-field .nf-error {display: none !important;}
+.nf-error-msg {text-align: center;}
+#top form {margin-bottom: 0;}
+.nf-error-msg.nf-error-field-errors {display:none;}
+
+/* styles */
+.nf-form-fields-required { display:none; }
+.widget_ninja_forms_widget{ padding:0; }
+.nf-field-container { margin-bottom: 0 !important;}
+.nf-multi-cell .nf-cell:first-child  { padding-left:  0 !important; }
+.nf-multi-cell .nf-cell:last-child   { padding-right: 0 !important; }
+
+#top input[type='email'], 
+#top input[type='tel'],
+#top input[type='text'], 
+#top input[type=submit],
+#top input[type=button],
+#top select,
+#top textarea  {
+    padding:15px;
+	font-size: inherit;
+	font-family:inherit;
+	margin-bottom: 5px;
+	border-radius:10px;
+}
+
+#top .nf-field-element textarea { height:135px; }
+
+#top input[type=submit] {
+	cursor: pointer; 
+	width: 100% ;
+    font-size:    18px;
+	font-family:  'Montserrat' !important;
+	font-weight:  bold;
+	text-transform: none !important;
+	color:        #ffffff;
+	border-color: #00A896;
+	border-radius:15px !important;
+	background-color:#00A896;
+    -webkit-appearance:none; 
+       -moz-appearance:none; 
+            appearance:none;
+}
+#top input[type=submit]:hover{
+    opacity: 0.9;
+}
+
+#top input[type='tel']::-webkit-input-placeholder, 
+#top input[type='email']::-webkit-input-placeholder, 
+#top input[type='text']::-webkit-input-placeholder, 
+#top textarea::-webkit-input-placeholder{
+    font-size:   inherit;
+	font-family: inherit;
+	color:       inherit;
+}
+
+#top input[type='tel']::-ms-input-placeholder, 
+#top input[type='email']::-ms-input-placeholder, 
+#top input[type='text']::-webkit-ms-placeholder, 
+#top textarea::-webkit-ms-placeholder  {
+    font-size:   inherit;
+	font-family: inherit;
+	color:       inherit;
+}
+
+#top input[type='tel']::-moz-placeholder, 
+#top input[type='email']::-moz-placeholder, 
+#top input[type='text']::-moz-placeholder, 
+#top textarea::-moz-placeholder {
+    font-size:   inherit;
+	font-family: inherit;
+	color:       inherit;
+}
+
+/* File upload styling */
+.files_uploaded { color:#ababab; }
+#top .nf-field-container.file_upload-container { margin-bottom: 0px; }
+#top .delete {
+	background-color:#ca1936;
+	border-radius:4px;
+	color:#fff;
+	padding:6px;
+	font-size:12px;
+	margin-left: 20px;
+}
+
+#top .file_upload-wrap label {    
+	line-height: 1.1em;
+    font-weight: initial;
+}
+
+#top .field-wrap button {
+    display: block;
+    width: 100%;
+    margin: 0 0 5px 0px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size:   inherit;
+    font-family: inherit;
+    -webkit-appearance: none;
+        -moz-appearance: none;
+            appearance: none;
+	-webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+	   -moz-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+	        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.nf-fu-fileinput-button span::after {
+    font-family: 'entypo-fontello';
+    content: "\e82e";
+    display: inline-block;
+    position: relative;
+    right: -10px;
+    color: #222;
+}
+
+#top .nf-fu-fileinput-button span {padding-right:10px;}
+
+#top .nf-fu-progress {
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+#top .files_uploaded p {margin:0;}
+
+@media only screen and (max-width: 767px) {
+	.nf-multi-cell .nf-cell {
+		padding: 0 !important;
+	}
+}
+
+/*******************************************************************************
+ * MOBILE STYLES
+ ******************************************************************************/
+@media only screen and (max-width : 1680px) {
+	
+	.xl-padding-50 {padding: 50px !important;}
+    .xl-padding-40 {padding: 40px !important;}
+    .xl-padding-30 {padding: 30px !important;}
+    .xl-padding-20 {padding: 20px !important;}
+    .xl-padding-10 {padding: 10px !important;}
+	.xl-padding-0 {padding: 0px !important;}
+	
+	.xl-width-50 .container { max-width:100% !important; width:50% !important; padding-left:0; padding-right:0;}
+    .xl-width-60 .container { max-width:100% !important; width:60% !important; padding-left:0; padding-right:0;}
+    .xl-width-70 .container { max-width:100% !important; width:70% !important; padding-left:0; padding-right:0;}
+	.xl-width-75 .container { max-width:100% !important; width:75% !important; padding-left:0; padding-right:0;}
+    .xl-width-80 .container { max-width:100% !important; width:80% !important; padding-left:0; padding-right:0;}
+	.xl-width-85 .container { max-width:100% !important; width:85% !important; padding-left:0; padding-right:0;}
+    .xl-width-90 .container { max-width:100% !important; width:90% !important; padding-left:0; padding-right:0;}
+	.xl-width-95 .container { max-width:100% !important; width:95% !important; padding-left:0; padding-right:0;}
+	.xl-width-100 .container { max-width:100% !important; width:100% !important; padding-left:0; padding-right:0;}
+}
+
+@media only screen and (max-width : 1440px) {
+	
+	.l-padding-50 {padding: 50px !important;}
+    .l-padding-40 {padding: 40px !important;}
+    .l-padding-30 {padding: 30px !important;}
+    .l-padding-20 {padding: 20px !important;}
+    .l-padding-10 {padding: 10px !important;}
+	.l-padding-0 {padding: 0px !important;}
+	
+	.l-width-50 .container { max-width:100% !important; width:50% !important; padding-left:0; padding-right:0;}
+    .l-width-60 .container { max-width:100% !important; width:60% !important; padding-left:0; padding-right:0;}
+    .l-width-70 .container { max-width:100% !important; width:70% !important; padding-left:0; padding-right:0;}
+	.l-width-75 .container { max-width:100% !important; width:75% !important; padding-left:0; padding-right:0;}
+    .l-width-80 .container { max-width:100% !important; width:80% !important; padding-left:0; padding-right:0;}
+	.l-width-85 .container { max-width:100% !important; width:85% !important; padding-left:0; padding-right:0;}
+    .l-width-90 .container { max-width:100% !important; width:90% !important; padding-left:0; padding-right:0;}
+	.l-width-95 .container { max-width:100% !important; width:95% !important; padding-left:0; padding-right:0;}
+	.l-width-100 .container { max-width:100% !important; width:100% !important; padding-left:0; padding-right:0;}
+
+	/* colorsektion i 2 columns - Får 1/4 til at ligge to og to på ipad & mobil */
+	.m-col-2 {width:50% !important;}
+	.m-col-2.av_one_fourth {float: left !important;}
+
+}
+
+@media only screen and (max-width: 989px) {
+    /**
+    * Tving også sticky header på mobil og tablet 
+    */
+    .html_header_top.html_header_sticky #header {
+        position: fixed !important;
+    }
+
+    /**
+    * Overskriv paddings
+    */
+    .m-padding-50 {padding: 50px !important;}
+    .m-padding-40 {padding: 40px !important;}
+    .m-padding-30 {padding: 30px !important;}
+    .m-padding-20 {padding: 20px !important;}
+    .m-padding-10 {padding: 10px !important;}
+	.m-padding-0 {padding: 0px !important;}
+	
+	/* overskriv width */
+	.m-width-50 .container { max-width:100% !important; width:50% !important; padding-left:0; padding-right:0;}
+    .m-width-60 .container { max-width:100% !important; width:60% !important; padding-left:0; padding-right:0;}
+    .m-width-70 .container { max-width:100% !important; width:70% !important; padding-left:0; padding-right:0;}
+	.m-width-75 .container { max-width:100% !important; width:75% !important; padding-left:0; padding-right:0;}
+    .m-width-80 .container { max-width:100% !important; width:80% !important; padding-left:0; padding-right:0;}
+	.m-width-85 .container { max-width:100% !important; width:85% !important; padding-left:0; padding-right:0;}
+    .m-width-90 .container { max-width:100% !important; width:90% !important; padding-left:0; padding-right:0;}
+	.m-width-95 .container { max-width:100% !important; width:95% !important; padding-left:0; padding-right:0;}
+	.m-width-100 .container { max-width:100% !important; width:100% !important; padding-left:0; padding-right:0;}
+
+  .responsive #top #wrap_all .av-break-at-tablet.av-layout-grid-container.nested-container .flex_cell {
+    display: inline-block;
+  } 
+	
+  /* remove rounded corners */
+   .responsive-no-border-radius {border-radius:0px 0px 0px 0px !important;}
+	
+}
+@media only screen and (min-width: 768px) and (max-width: 989px) { 
+  .responsive.html_mobile_menu_tablet.html_header_top #top #main {padding-top: 88px !important;}
+}
+
+@media only screen and (max-width: 767px) {
+    /**
+    * Overskriv paddings
+    */
+    .s-padding-50 {padding: 50px !important;}
+    .s-padding-40 {padding: 40px !important;}
+    .s-padding-30 {padding: 30px !important;}
+    .s-padding-20 {padding: 20px !important;}
+    .s-padding-10 {padding: 10px !important;}
+	.s-padding-0 {padding: 0px !important;}
+	
+	/* overskriv width */
+	.s-width-50 .container { max-width:100% !important; width:50% !important; padding-left:0; padding-right:0;}
+    .s-width-60 .container { max-width:100% !important; width:60% !important; padding-left:0; padding-right:0;}
+    .s-width-70 .container { max-width:100% !important; width:70% !important; padding-left:0; padding-right:0;}
+	.s-width-75 .container { max-width:100% !important; width:75% !important; padding-left:0; padding-right:0;}
+    .s-width-80 .container { max-width:100% !important; width:80% !important; padding-left:0; padding-right:0;}
+	.s-width-85 .container { max-width:100% !important; width:85% !important; padding-left:0; padding-right:0;}
+    .s-width-90 .container { max-width:100% !important; width:90% !important; padding-left:0; padding-right:0;}
+	.s-width-95 .container { max-width:100% !important; width:95% !important; padding-left:0; padding-right:0;}
+	.s-width-100 .container { max-width:100% !important; width:100% !important; padding-left:0; padding-right:0;}
+
+	.responsive #top .av-large-testimonial-slider.avia-testimonial-wrapper .avia-testimonial {
+		padding: 0px 10px;
+	}
+
+	.responsive #main {padding-top: 0px !important;}
+	.responsive #top #main .container_wrap:first-child {
+        border-top: none;
+        margin-top: 80px;
+    }
+}
+@media only screen and (max-width: 479px) {
+    /**
+    * Overskriv paddings
+    */
+    .xs-padding-50 {padding: 50px !important;}
+    .xs-padding-40 {padding: 40px !important;}
+    .xs-padding-30 {padding: 30px !important;}
+    .xs-padding-20 {padding: 20px !important;}
+    .xs-padding-10 {padding: 10px !important;}
+	.xs-padding-0 {padding: 0px !important;}
+	
+	/* overskriv width */
+	.xs-width-50 .container { max-width:100% !important; width:50% !important; padding-left:0; padding-right:0;}
+    .xs-width-60 .container { max-width:100% !important; width:60% !important; padding-left:0; padding-right:0;}
+    .xs-width-70 .container { max-width:100% !important; width:70% !important; padding-left:0; padding-right:0;}
+	.xs-width-75 .container { max-width:100% !important; width:75% !important; padding-left:0; padding-right:0;}
+    .xs-width-80 .container { max-width:100% !important; width:80% !important; padding-left:0; padding-right:0;}
+	.xs-width-85 .container { max-width:100% !important; width:85% !important; padding-left:0; padding-right:0;}
+    .xs-width-90 .container { max-width:100% !important; width:90% !important; padding-left:0; padding-right:0;}
+	.xs-width-95 .container { max-width:100% !important; width:95% !important; padding-left:0; padding-right:0;}
+	.xs-width-100 .container { max-width:100% !important; width:100% !important; padding-left:0; padding-right:0;}
+	
+}
+
+/* Mobile custom menu - husk at vælg "ikon position right" */
+.column-top-margin.mobile-menu-row {margin-top:0px !important; border-top:1px solid #eaeaea;}
+
+/* MOBILE MENU */
+.mobile-menu-builder-customizer--container {border-top:0px;}
+.mobile-menu-builder--links.mobile-menu-builder--link-4 {background-color:black;}
+.mobile-menu-builder-customizer--container {transition:none !important; transition-timing-function: none !important; z-index:999999999999999 !important;}
+
+/*------------------------------------*\
+  # Navigation
+  # Pænere styles på dropdown menuerne på tramsperrent header
+\*------------------------------------*/
+
+@media only screen and (min-width: 989px) { 
+
+  /* Transparrent menu - Button style */
+	.av_header_transparency .av-menu-button-colored a {
+		-webkit-font-smoothing: antialiased;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+		-moz-transition: all .4s ease;
+		-webkit-transition: all .4s ease;
+		-o-transition: all .4s ease;
+		transition: all .4s ease;
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+	}
+	.av_header_transparency .av-menu-button-colored a:hover {
+		-moz-transition: all .4s ease;
+		-webkit-transition: all .4s ease;
+		-o-transition: all .4s ease;
+		transition: all .4s ease;
+		opacity:1 !important;
+		-moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-o-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+	.av_header_transparency .av-menu-button-colored a:hover .avia-menu-text {
+		-webkit-box-shadow: 0 20px 35px rgba(0,0,0,.22);
+		-moz-box-shadow: 0 20px 35px rgba(0,0,0,.22);
+		box-shadow: 0 20px 35px rgba(0,0,0,.22);
+	}
+	.av_header_transparency .av-menu-button-colored .avia-menu-text  {
+		-moz-transition: all .4s ease;
+		-webkit-transition: all .4s ease;
+		-o-transition: all .4s ease;
+		transition: all .4s ease;
+	}
+
+	/* Transparrent menu - Dropdown style */
+
+	#header.av_header_transparency .avia_mega_div > .sub-menu,
+	#header.av_header_transparency li > .sub-menu {
+		border-radius: 10px;
+		border-top: none !important;
+	}
+	#header li > .sub-menu {border-radius: 0 0 10px 10px !important;}
+	#header.av_header_transparency li > .sub-menu li:first-child a {border-radius: 10px 10px 0 0 !important;}
+	#header li > .sub-menu li:last-child a {border-radius: 0 0 10px 10px !important;}
+	#header.av_header_transparency .avia_mega_div,
+	#header.av_header_transparency li > .sub-menu {
+		overflow: visible !important;
+		border-radius: 10px !important;
+		-webkit-box-shadow: 0 20px 35px rgba(0,0,0,.22);
+		-moz-box-shadow: 0 20px 35px rgba(0,0,0,.22);
+		box-shadow: 0 20px 35px rgba(0,0,0,.22);
+  }
+
+  /* Normal menu dropdown */
+	#header.av_header_transparency li > .sub-menu:after{
+	  top: 0;
+	  left: 40px;
+	  width: 15px;
+	  height: 15px;
+		-webkit-transform: translate(-50%, -50%) rotate(45deg);
+		transform: translate(-50%, -50%) rotate(45deg);
+		background: inherit;
+		display: block;
+		position: absolute;
+		content: "";
+		border-top: 1px solid rgba(0,0,0,0.05);
+		border-left: 1px solid rgba(0,0,0,0.05);
+  }
+  
+}
+
+/*******************************************************************************
+ * STOCK MOBILMENU
+ ******************************************************************************/
+
+/* fjerner normal mobilmenu*/
+@media only screen and (max-width: 767px) {
+	.responsive #top #header .logo {display: none;}
+	.responsive #top #header .av-main-nav .menu-item-avia-special {display: none;}
+}
+
+/* fjerner margin til top */
+@media only screen and (max-width: 767px) {
+	.responsive #top #main .container_wrap:first-child {margin-top:0px !important;}
+}
+
+/* styles for custom mobilmenu */
+@media only screen and (max-width: 767px) {
+	#mobile-menu-grid {
+	position:fixed !important; 
+	bottom:0px !important; 
+	z-index:999999999 !important; 
+	box-shadow:10px 10px 20px black;
+	}
+
+	.av-hamburger-inner, .av-hamburger-inner::before, .av-hamburger-inner::after {background-color:#fff;}
+	.custom-burger-menu {margin-top:-42px;}
+	#top #av-burger-menu-ul {vertical-align:top;}
+	ul#av-burger-menu-ul {padding:30px 0px !important;}
+}
+
+/* fjerner whitespace på iPad */
+.responsive #top #wrap_all .av-break-at-tablet .flex_cell {margin-bottom:0px;}
+.responsive .flex_column.mobile-remove-gap {margin-bottom:0px !important;}
+
+/* Mobile Footer ikonliste */
+.avia-icon-list-container.mobile-footer-ikonliste {margin:15px 0px;}
+.mobile-footer-ikonliste .av-iconlist-small .iconlist_title_small {margin-bottom:5px;}
+.mobile-footer-ikonliste .av-iconlist-small .iconlist_content p {color:#eaeaea;}
+
+/* Ikonliste eller liste deler sig i to rækker */
+.multi-column { -moz-column-count: 2; -moz-column-gap: 20px; -webkit-column-count: 2; -webkit-column-gap: 20px; column-count: 2;column-gap: 20px; }
+
+/* Får katalog til at have en fast font-size */
+.priser .av-catalogue-title {text-transform:none; font-size:15px;}
+.priser .av-catalogue-price {text-transform:initial; font-size:15px;}
+.priser .av-catalogue-content {text-transform:initial; font-size:13px;}
+
+/*******************************************************************************
+ * CUSTOM STYLES
+ ******************************************************************************/
+/* koverteringsfarve på links i footeren */
+.mobile-footer-ikonliste .av_iconlist_title a {color:#00A896 !important; font-weight:bold;}
+
+
+/* Border Radius på masonry */
+.av-masonry-image-container {
+    border-radius: 5px !important;
+}
+
+img.avia_image {
+    border-radius: 5px !important;
+}
+
+ /* Catalogue priser  */
+
+.av-catalogue-title {
+	
+	font-size: 16px !important;
+	text-transform: none !important;
+}
+
+.av-catalogue-price{
+	font-size: 16px !important;
+	text-transform: none !important;
+	
+}
+
+.av-catalogue-content {
+		font-size: 16px !important;
+	text-transform: none !important;
+	
+	}
+
+
+ /* Fjern underline  */
+
+#top .av_inherit_color a {
+    text-decoration: none;
+	
+}
+
+
+.av-boxed-grid-style .avia-testimonial_inner {
+  
+    border-radius: 10px !important;
+    background-color: white !important;
+	min-height: 400px !important
+}
+
+
+/*******************************************************************************
+ * CUSTOM MOBILE STYLES
+ ******************************************************************************/
+@media only screen and (max-width: 1110px) {.av-main-nav > li.menu-item-avia-special {
+    display: block;
+}
+.av-main-nav > li {
+    display: none;
+}}
+@media only screen and (max-width: 989px) {}
+@media only screen and (min-width: 768px) and (max-width: 989px) {}
+@media only screen and (max-width: 767px) {}
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (max-width: 479px) {
+/* Rykker cookiebot over mobilbaren - må ikke slettes */
+div#CookiebotWidget { bottom: 90px !important; }
+}
+
