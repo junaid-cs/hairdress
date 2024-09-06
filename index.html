@@ -38,35 +38,7 @@
  &raquo;-kommentar-feed"
     href="https://neergaard-hairdesign.dk/comments/feed/">
   <!-- google webfont font replacement -->
-  <script type="text/javascript">
-    (function () {
-      /*	check if webfonts are disabled by user setting via cookie - or user must opt in.	*/
-      var html = document.getElementsByTagName('html')[0];
-      var cookie_check = html.className.indexOf('av-cookies-needs-opt-in') >= 0 || html.className.indexOf('av-cookies-can-opt-out') >= 0;
-      var allow_continue = true;
-      var silent_accept_cookie = html.className.indexOf('av-cookies-user-silent-accept') >= 0;
-      if (cookie_check && !silent_accept_cookie) {
-        if (!document.cookie.match(/aviaCookieConsent/) || html.className.indexOf('av-cookies-session-refused') >= 0) {
-          allow_continue = false;
-        } else {
-          if (!document.cookie.match(/aviaPrivacyRefuseCookiesHideBar/)) {
-            allow_continue = false;
-          } else if (!document.cookie.match(/aviaPrivacyEssentialCookiesEnabled/)) {
-            allow_continue = false;
-          } else if (document.cookie.match(/aviaPrivacyGoogleWebfontsDisabled/)) {
-            allow_continue = false;
-          }
-        }
-      }
-      if (allow_continue) {
-        var f = document.createElement('link');
-        f.type = 'text/css';
-        f.rel = 'stylesheet';
-        f.id = 'avia-google-webfont';
-        document.getElementsByTagName('head')[0].appendChild(f);
-      }
-    })();
-  </script>
+
   <link rel="stylesheet" id="avia-grid-css" href="css/css-grid.css" type="text/css" media="all">
   <link rel="stylesheet" id="avia-base-css" href="css/css-base.css" type="text/css" media="all">
   <!-- header -->
@@ -117,7 +89,10 @@
     media="all">
   <link rel="stylesheet" id="avia-single-post-782-css" href="css/avia_posts_css-post-782.css" type="text/css"
     media="all">
-  <script type="text/javascript" src="js/jquery-jquery.min.js" id="jquery-core-js"></script>
+    <script id="jquery-core-js" src="js/jquery-jquery.min.js" type="text/javascript"></script>
+    <script id="jquery-migrate-js" src="js/jquery-jquery-migrate.min.js" type="text/javascript"></script>
+    <script id="avia-js-js" src="js/js-avia-js.js" type="text/javascript"></script>
+    <script id="avia-compat-js" src="js/js-avia-compat.js" type="text/javascript"></script>
 
   <link rel="https://api.w.org/" href="https://neergaard-hairdesign.dk/wp-json/">
   <link rel="alternate" title="JSON" type="application/json"
@@ -1833,10 +1808,10 @@ PLAu:8
               padding: 8px 8px 8px 8px !important;
             }
           </style>
-          <a class="av-screen-reader-only" href="index.html">Link to: Forside</a>
+          <a class="av-screen-reader-only" href="./index.html">Link to: Forside</a>
           <div
             class="flex_cell av-f2gnx-f6d4b05c2120e915645e023f59c5783b av-gridrow-cell av_one_fourth no_margin avia-link-column av-cell-link"
-            data-link-column-url="https://neergaard-hairdesign.dk/">
+            data-link-column-url="./index.html">
             <div class="flex_cell_inner">
               <style type="text/css" data-created_by="avia_inline_auto"
                 id="style-css-av-kcvsrm3d-69c35c0adcb4e8345f0e150d85ac7874">
@@ -1892,13 +1867,13 @@ PLAu:8
               padding: 8px 8px 8px 8px !important;
             }
           </style>
-          <a class="av-screen-reader-only" href="https://salonbook.one/?neergaard.hairdesign#/">
+          <a class="av-screen-reader-only" href="#">
             Follow a
             manual added link
           </a>
           <div
             class="flex_cell av-aozol-8896239ed69e4768f4c39ac8762e254f av-gridrow-cell av_one_fourth no_margin avia-link-column av-cell-link"
-            data-link-column-url="https://salonbook.one/?neergaard.hairdesign#/">
+            data-link-column-url="#">
             <div class="flex_cell_inner">
               <style type="text/css" data-created_by="avia_inline_auto"
                 id="style-css-av-lo6vztcq-4ec379f804f08e8c2f48d2782beee65d">
@@ -2131,25 +2106,43 @@ PLAu:8
   </a>
   <div id="fb-root"></div>
 
-  
+  <script>
+    (function ($) {
+      $(".open-burger-menu").on("click", function (e) {
+        $(".av-burger-menu-main a").click();
+        $("html, body").animate({ scrollTop: $(window).scrollTop() }, 100);
+
+        setTimeout(function () {
+          history.pushState(
+            "",
+            document.title,
+            window.location.pathname + window.location.search
+          );
+        }, 100);
+      });
+    })(jQuery);
+  </script>
  <!-- img animations -->
-  <script type="text/javascript" src="js/waypoints-waypoints.min.js" id="avia-waypoints-js"></script>
-  <script type="text/javascript" src="js/js-avia.js" id="avia-default-js"></script>
-  <script type="text/javascript" src="js/js-shortcodes.js" id="avia-shortcodes-js"></script>
-  <script type="text/javascript" src="js/portfolio-isotope.min.js" id="avia-module-isotope-js"></script>
-  <script type="text/javascript" src="js/masonry_entries-masonry_entries.js" id="avia-module-masonry-js"></script>
- <!-- img animations -->
- <!-- video -->
-  <script type="text/javascript" src="js/slideshow-slideshow.js" id="avia-module-slideshow-js"></script>
-  <script type="text/javascript" src="js/slideshow-slideshow-video.js" id="avia-module-slideshow-video-js"></script>
- <!-- video -->
-  <script type="text/javascript" src="js/js-avia-snippet-sticky-header.js" id="avia-sticky-header-js"></script>
-  <script type="text/javascript" src="js/js-avia-snippet-footer-effects.js" id="avia-footer-effects-js"></script>
- 
-  <script type="text/javascript" src="js/mediaelement-mediaelement-and-player.min.js"
-    id="mediaelement-core-js"></script>
-  <script type="text/javascript" src="js/mediaelement-mediaelement-migrate.min.js"
-    id="mediaelement-migrate-js"></script>
+ <script id="avia-waypoints-js" src="js/waypoints-waypoints.min.js" type="text/javascript"></script>
+  <script id="avia-default-js" src="js/js-avia.js" type="text/javascript"></script>
+  <script id="avia-shortcodes-js" src="js/js-shortcodes.js" type="text/javascript"></script>
+  <script id="avia-module-gallery-js" src="js/gallery-gallery.js" type="text/javascript"></script>
+  <script id="avia-module-iconlist-js" src="js/iconlist-iconlist.js" type="text/javascript"></script>
+  <script id="avia-module-isotope-js" src="js/portfolio-isotope.min.js" type="text/javascript"></script>
+  <script id="avia-module-masonry-js" src="js/masonry_entries-masonry_entries.js" type="text/javascript"></script>
+  <script id="avia-module-tabs-js" src="js/tabs-tabs.js" type="text/javascript"></script>
+  <script id="avia-module-slideshow-js" src="js/slideshow-slideshow.js" type="text/javascript"></script>
+  <script id="avia-module-testimonials-js" src="js/testimonials-testimonials.js" type="text/javascript"></script>
+  <script id="avia-module-slideshow-video-js" src="js/slideshow-slideshow-video.js" type="text/javascript"></script>
+  <script id="avia-module-video-js" src="js/video-video.js" type="text/javascript"></script>
+  <script id="avia-hamburger-menu-js" src="js/js-avia-snippet-hamburger-menu.js" type="text/javascript"></script>
+  <script id="avia-parallax-support-js" src="js/js-avia-snippet-parallax.js" type="text/javascript"></script>
+  <script id="avia-fold-unfold-js" src="js/js-avia-snippet-fold-unfold.js" type="text/javascript"></script>
+  <script id="avia-popup-js-js" src="js/aviapopup-jquery.magnific-popup.min.js" type="text/javascript"></script>
+  <script id="avia-lightbox-activation-js" src="js/js-avia-snippet-lightbox.js" type="text/javascript"></script>
+  <script id="avia-sticky-header-js" src="js/js-avia-snippet-sticky-header.js" type="text/javascript"></script>
+  <script id="avia-footer-effects-js" src="js/js-avia-snippet-footer-effects.js" type="text/javascript"></script>
+  <script id="avia-widget-js-js" src="js/js-avia-snippet-widget.js" type="text/javascript"></script>
 
 </body>
 
