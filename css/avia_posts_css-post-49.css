@@ -74,6 +74,15 @@ width: 500px;
     background-repeat: no-repeat;
     overflow: hidden;
 }
+@media screen and (max-width:480px) {
+    .flex_column.av-lo6w4n4a-d7dc5da6ce5c318bfc1b2e8a8ce49433 .mobile-icon{
+        width: 110%;
+        left: -5%;
+        background-size: cover;
+  
+    
+    }
+}
 .mobile-icon #myIframe {
     position: absolute;
     width: 100%;
