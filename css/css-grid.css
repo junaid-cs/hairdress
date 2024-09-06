@@ -350,6 +350,18 @@ div .av_one_half {
 	margin-left: 6%;
 	width: 47%;
 }
+@media screen and (max-width: 480px) {
+	.av-masonry-container.isotope {
+		height: auto !important;
+	}
+	a#av-masonry-1-item-798 {
+		position: relative !important;
+	}
+	.text{
+		margin-left: 0 !important;
+	}
+	
+}
 div .av_three_fifth {
 	margin-left: 6%;
 	width: 57.599999999999994%;
