@@ -60,6 +60,25 @@ height:1px;
 border-radius:5px 5px 5px 5px;
 padding:50px 50px 50px 50px;
 background-color:#fcf5f8;
+position: relative;
+overflow: hidden;
+width: 500px;
+}
+.flex_column.av-lo6w4n4a-d7dc5da6ce5c318bfc1b2e8a8ce49433 .mobile-icon{
+    position: relative;
+    width: 100%;
+    left: 3%;
+    min-height: 565px;
+    background-image: url(../images/iphone-x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.mobile-icon #myIframe {
+    position: absolute;
+    width: 100%;
+    top: 55px;
+    left: 20px;
 }
 
 #top .av-special-heading.av-4nrup-95df74de06e1b25dd6c19866a0c38268{
